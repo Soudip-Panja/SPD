@@ -51,6 +51,23 @@
         display: inline;
         padding: 0rem 0.5rem; /* 0rem it means for top and bottom, 0.5rem it means for left and right */
       }
+      .navigation {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem;
+      }
+      .nav-pills {
+        text-align: right;
+      }
+      .nav-brand {
+        font-weight: bold;
+      }
+      .navigation .link { /* applying class inside another class */
+        color: white;
+      }
+      .navigation .link-active {
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
@@ -93,11 +110,21 @@
     </ul>
     <hr />
     <!-- Reversering Ordered list -->
-     <h2>Lists</h2>
+    <h2>Reversed Order Lists</h2>
     <ol reversed>
       <li>Item One</li>
       <li>Item Two</li>
       <li>Item Three</li>
     </ol>
+    <!-- Navbar -->
+    <h3>Navbar</h3>
+    <nav class="container navigation">
+      <div class="nav-brand">Brand Name</div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline"><a href="/" class="link link-active">Item One</a></li>
+        <li class="list-item-inline"><a href="/" class="link">Item Two</a></li>
+        <li class="list-item-inline"><a href="/" class="link ">Item Three</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
