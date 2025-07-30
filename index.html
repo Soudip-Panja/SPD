@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS2</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      :root {
+        /* This root color is to make default color for entire website  */
+        --primary-color: purple;
+      }
+      .submit1 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+      }
+      .submit2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        box-sizing: border-box;
+        width: 200px;
+      }
+      .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .centered-container {
+        max-width: 600px;
+        margin: auto;
+      }
+      .link {
+        text-decoration: none;
+      }
+      .link-primary {
+        border: 2px solid var(--primary-color); /* Use of root color */
+        background-color: var(--primary-color); /* Use of root color */
+        border-radius: 0.5rem;
+        color: white;
+        padding: 10px;
+      }
+      .link-secondary {
+        border: 2px solid var(--primary-color); /* Use of root color */
+        border-radius: 0.5rem;
+        color: var(--primary-color);
+        padding: 10px;
+      }
+      .list-non-bullet {
+        list-style: none;
+      }
+      .list-item-inline {
+        display: inline;
+        padding: 0rem 0.5rem; /* 0rem it means for top and bottom, 0.5rem it means for left and right */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Box Model (It adjust box element size saperately.) -->
+    <div>
+      <button class="submit1">Submit</button>
+      <button>Edit</button>
+    </div>
+    <hr />
+    <!-- Box Sizing (It adjust the entire element in specific size.) -->
+    <div>
+      <button class="submit2">Submit</button>
+      <button>Edit</button>
+    </div>
+    <hr />
+    <!-- Containers -->
+    <div class="container">This is a container.</div>
+    <hr />
+    <!-- Centered Container -->
+    <div class="container centered-container">This is centered container.</div>
+    <hr />
+    <!-- Styles to Links -->
+    <a href="/" class="link link-primary">Primary</a>
+    <a href="/" class="link link-secondary">Secondary</a>
+    <hr />
+    <!-- Styling List -->
+    <h2>Lists</h2>
+    <ul class="list-non-bullet">
+      <li>Item One</li>
+      <li>Item Two</li>
+      <li>Item Three</li>
+    </ul>
+    <hr />
+    <!--Inline Styling List -->
+    <h2>Lists</h2>
+    <ul class="list-non-bullet">
+      <li class="list-item-inline">Item One</li>
+      <li class="list-item-inline">Item Two</li>
+      <li class="list-item-inline">Item Three</li>
+    </ul>
+    <hr />
+    <!-- Reversering Ordered list -->
+  </body>
+</html>
